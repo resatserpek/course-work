@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import ChartControlTrading from './components/ChartControlTrading'
+import ChartControlApplied from './components/ChartControlApplied'
+
+// Source : https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
+// Source: https://www.npmjs.com/package/react-bar-chart
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className='row'>
+          <h1 className=".h1">Trading Status</h1>
+
+          <div className='col-sm'>
+            
+            <ChartControlTrading/>
+            
+          </div>
+          <div className='col-sm'>
+            
+            <ChartControlApplied/>
+            
+          </div>
+        </div>
+        
+      </div>
+      
     </div>
   );
 }

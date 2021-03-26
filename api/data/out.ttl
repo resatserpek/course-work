@@ -1,0 +1,1773 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/Country/> a rdfs:Class .
+
+<http://example.org/Industry/> a rdfs:Class .
+
+<http://example.org/Trading/> a rdfs:Class .
+
+<http://example.org/Workforce/> a rdfs:Class .
+
+<http://example.org/applied/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "Applied" .
+
+<http://example.org/continues/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "Yes" .
+
+<http://example.org/country/> rdf:Property <http://example.org/Trading/> .
+
+<http://example.org/industry/> rdf:Property <http://example.org/Trading/> .
+
+<http://example.org/intending/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "Intending" .
+
+<http://example.org/received/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "Received" .
+
+<http://example.org/stops/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "No" .
+
+<http://example.org/temp/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "Temp No" .
+
+<http://example.org/workforce/> rdf:Property <http://example.org/Trading/> .
+
+<http://example.org/England> a <http://example.org/Country/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "27.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "10.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "67.3" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "22.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "20.5" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "9.7" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "57.3" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "77.8" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/England> ;
+            rdf:value "21.8" ] ;
+    ns1:title "England" .
+
+<http://example.org/Northern_Ireland> a <http://example.org/Country/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "65.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "6.5" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "23.9" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "10.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "30.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "13.0" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "40.2" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "72.8" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Northern_Ireland> ;
+            rdf:value "27.2" ] ;
+    ns1:title "Northern_Ireland" .
+
+<http://example.org/Scotland> a <http://example.org/Country/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "63.0" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "23.5" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "16.5" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "29.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "7.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "71.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "9.8" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "77.6" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Scotland> ;
+            rdf:value "21.7" ] ;
+    ns1:title "Scotland" .
+
+<http://example.org/UK> a <http://example.org/Country/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "20.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "22.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "67.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "11.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "9.9" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "27.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "56.4" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "76.7" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/UK> ;
+            rdf:value "22.8" ] ;
+    ns1:title "UK" .
+
+<http://example.org/Wales> a <http://example.org/Country/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "12.7" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "25.5" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "38.7" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "65.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "13.4" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "73.8" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "13.7" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "76.2" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "1.1" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Wales> ;
+            rdf:value "22.7" ] ;
+    ns1:title "Wales" .
+
+<http://example.org/-250> a <http://example.org/Workforce/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "68.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "19.8" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "11.2" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "22.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "27.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "13.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "56.0" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "74.8" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "20.2" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "9.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "8.5" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "48.0" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "36.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "4.6" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "8.9" ;
+            foaf:name "Business rates holiday" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "8.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "16.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "18.6" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "22.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "40.7" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "20.5" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "2.3" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/-250> ;
+            rdf:value "24.7" ] ;
+    ns1:title "-250" .
+
+<http://example.org/250+> a <http://example.org/Workforce/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "22.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "22.3" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "7.3" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "27.9" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "64.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "57.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "7.9" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "79.8" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "48.6" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "37.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "7.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "9.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "7.2" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "16.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "2.7" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "16.3" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "-46.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "1.1" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "22.4" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "20.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "4.6" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "16.8" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/250+> ;
+            rdf:value "19.7" ] ;
+    ns1:title "250+" .
+
+<http://example.org/Accommodation_And_Food_Service_Activities> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "80.6" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "78.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "20.6" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "42.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "2.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "87.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "24.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "18.2" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "39.8" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "40.4" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "23.5" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "12.2" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "18.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "6.1" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "13.7" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "59.6" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "25.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "63.3" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "17.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "12.9" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "30.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "3.5" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "1.2" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Accommodation_And_Food_Service_Activities> ;
+            rdf:value "80.6" ] ;
+    ns1:title "Accommodation_And_Food_Service_Activities" .
+
+<http://example.org/Administrative_And_Support_Service_Activities> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "13.9" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "75.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "20.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "21.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "20.5" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "12.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "63.7" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "91.5" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "45.0" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "9.0" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "22.7" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "6.3" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "8.9" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "10.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "40.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "14.4" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "46.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "14.7" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "28.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "12.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "1.7" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "20.6" ;
+            foaf:name "We haven't received any that we applied for" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Administrative_And_Support_Service_Activities> ;
+            rdf:value "8.1" ] ;
+    ns1:title "Administrative_And_Support_Service_Activities" .
+
+<http://example.org/All_Industries> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "11.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "67.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "22.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "56.4" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "9.9" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "27.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "20.7" ;
+            foaf:name "We have not applied for any of these initiatives" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "76.7" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "-36.8" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "8.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "3.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "19.0" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "48.2" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "9.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "8.0" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "16.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "42.7" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "7.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "1.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "19.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "18.9" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "22.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/All_Industries> ;
+            rdf:value "22.8" ] ;
+    ns1:title "All_Industries" .
+
+<http://example.org/Arts,_Entertainment_And_Recreation> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "61.2" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "33.1" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "57.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "18.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "76.3" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "18.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "1200.6" ;
+            foaf:name "We have not applied for any of these initiatives" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "20.5" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "10.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "10.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "39.2" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "41.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "12.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "5.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "21.2" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "17.6" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "4.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "21.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "45.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "25.5" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "43.5" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "10.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Arts,_Entertainment_And_Recreation> ;
+            rdf:value "79.5" ] ;
+    ns1:title "Arts,_Entertainment_And_Recreation" .
+
+<http://example.org/Construction> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "9.6" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "13.5" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "80.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "28.7" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "11.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "59.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "6.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "73.2" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "9.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "42.2" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "17.4" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "3.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "42.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "5.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "11.0" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "1.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "5.7" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "2.1" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "27.0" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "23.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "44.3" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "29.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Construction> ;
+            rdf:value "26.1" ] ;
+    ns1:title "Construction" .
+
+<http://example.org/Education> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "48.4" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "7.0" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "8.5" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "2.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "26.3" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "40.5" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "2.8" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "86.8" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "17.4" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "2.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "0.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "42.1" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "9.8" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "6.6" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "45.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "5.7" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "0.5" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "18.4" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "3.8" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "22.8" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "0.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "9.8" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Education> ;
+            rdf:value "12.6" ] ;
+    ns1:title "Education" .
+
+<http://example.org/Human_Health_And_Social_Work_Activities> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "13.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "16.2" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "34.5" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "2.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "55.6" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "6.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "10.6" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "93.8" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "1.4" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "3.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "9.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "58.5" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "4.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "5.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "31.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "8.5" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "15.5" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "14.1" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "9.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "7.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "4.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "0.5" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "1.4" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Human_Health_And_Social_Work_Activities> ;
+            rdf:value "4.9" ] ;
+    ns1:title "Human_Health_And_Social_Work_Activities" .
+
+<http://example.org/Information_And_Communication> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "40.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "13.7" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "8.2" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "3.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "37.3" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "3.6" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "47.4" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "95.0" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "58.7" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "7.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "5.0" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "26.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "16.3" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "2.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "6.7" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "39.7" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "3.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "1.7" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "12.7" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "1.0" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "10.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "15.4" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Information_And_Communication> ;
+            rdf:value "4.5" ] ;
+    ns1:title "Information_And_Communication" .
+
+<http://example.org/Manufacturing> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "44.3" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "63.5" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "14.0" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "19.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "8.6" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "4.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "26.0" ;
+            foaf:name "We have not applied for any of these initiatives" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "79.0" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "16.7" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "8.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "2.8" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "9.2" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "38.3" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "6.6" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "48.1" ;
+            foaf:name "None of the above" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "2.6" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "23.7" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "33.0" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "19.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "7.9" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "1.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "14.7" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Manufacturing> ;
+            rdf:value "20.6" ] ;
+    ns1:title "Manufacturing" .
+
+<http://example.org/Professional,_Scientific_And_Technical_Activities> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "20.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "8.1" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "12.6" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "4.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "62.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "18.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "66.2" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "96.7" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "50.3" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "2.3" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "7.3" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "8.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "7.4" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "35.0" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "22.8" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "14.6" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "17.6" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "7.8" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "2.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "21.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "51.8" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "2.3" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Professional,_Scientific_And_Technical_Activities> ;
+            rdf:value "3.0" ] ;
+    ns1:title "Professional,_Scientific_And_Technical_Activities" .
+
+<http://example.org/Total> a <http://example.org/Workforce/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "20.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "22.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "67.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "56.4" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "27.4" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "9.9" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "11.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "76.7" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "8.0" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "9.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "3.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "8.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "48.2" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "19.0" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "36.8" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "7.0" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "1.8" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "16.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "22.2" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "19.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "18.9" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "42.7" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/workforce/> <http://example.org/Total> ;
+            rdf:value "22.8" ] ;
+    ns1:title "Total" .
+
+<http://example.org/Transportation_And_Storage> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "6.4" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "9.2" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "24.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "76.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "16.7" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "24.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "55.3" ;
+            foaf:name "Deferring VAT payments" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "91.5" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "19.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "7.4" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "9.6" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "7.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "48.9" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "2.1" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "35.5" ;
+            foaf:name "Coronavirus Job Retention Scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "14.5" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "44.0" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "18.8" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "2.5" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "2.5" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "28.7" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "18.4" ;
+            foaf:name "We haven't received any that we applied for" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Transportation_And_Storage> ;
+            rdf:value "8.5" ] ;
+    ns1:title "Transportation_And_Storage" .
+
+<http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "15.7" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "57.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "5.7" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "21.4" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "21.4" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "68.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "10.0" ;
+            foaf:name "Accredited finance agreements" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "90.0" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "7.1" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "7.1" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "22.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "14.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "38.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "2.9" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "45.7" ;
+            foaf:name "None of the above" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "4.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "4.3" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "24.3" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "1.4" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "28.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "37.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "15.7" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities> ;
+            rdf:value "10.0" ] ;
+    ns1:title "Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities" .
+
+<http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> a <http://example.org/Industry/> ;
+    <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "72.6" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "15.5" ;
+            foaf:name "We have not applied for any of these initiatives" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "60.1" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "9.0" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "44.6" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "25.0" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "13.3" ;
+            foaf:name "Government-funded small business grant or loan schemes" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "75.2" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "4.2" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "9.3" ;
+            foaf:name "Business rates holiday" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "32.1" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "15.8" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "53.8" ;
+            foaf:name "None of the above" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "8.3" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "7.6" ;
+            foaf:name "HMRC Time To Pay scheme" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "1.5" ;
+            foaf:name "Accredited finance agreements" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "9.1" ;
+            foaf:name "Government-funded small business grant or loan schemes" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "16.0" ;
+            foaf:name "We haven't received any that we applied for" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "23.9" ;
+            foaf:name "Coronavirus Job Retention Scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "18.3" ;
+            foaf:name "HMRC Time To Pay scheme" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "46.9" ;
+            foaf:name "Deferring VAT payments" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "33.4" ;
+            foaf:name "Business rates holiday" ] ;
+    <http://example.org/stops/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "0.5" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles> ;
+            rdf:value "24.3" ] ;
+    ns1:title "Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles" .
+
